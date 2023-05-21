@@ -1,0 +1,16 @@
+<script>
+export default {
+  async asyncData({ params, error }) {
+    try {
+      const res = await fetch(`https://islandhopperco.com/api/articles/${params.slug}`);
+      const article = await res.json();
+
+      return {
+        article,
+      };
+    } catch (err) {
+      error({ statusCode: 404, message: 'Article not found' });
+    }
+  },
+};
+</script>
