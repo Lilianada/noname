@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div :class="['navbar', $route.path === '/' ? 'gradient-bg' : 'bg-transparent', 'fixed w-full z-10']">
+    <div :class="['navbar', $route.path === '/' ? 'gradient-bg' : 'bg-transparent', 'fixed w-full z-50']">
       <div class="flex-1">
         <a href="/">
           <img class="h-20 w-auto sm:h-24" src="~/assets/Logo-gradient_no-bg.png" alt="Logo">
